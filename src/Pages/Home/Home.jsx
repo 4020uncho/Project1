@@ -19,10 +19,6 @@ const Home = () => {
       {/* Navbar sits below the header */}
       <Navbar />
 
-      {/* Page content renders here */}
-      <main>
-        <Outlet />
-      </main>
     </>
   );
 };
