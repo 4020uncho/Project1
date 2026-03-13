@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar/Navbar'
 const Courses = () => {
   return (
     <div>
-        <Navbar/>
+
         Courses</div>
   )
 }
