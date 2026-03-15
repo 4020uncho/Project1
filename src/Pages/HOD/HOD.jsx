@@ -15,7 +15,7 @@ const HOD = () => {
     <div className="carousel-item active">
       <img src={hod} className="d-block w-100" alt="HOD"/>
       <div className="carousel-caption d-none d-md-block">
-        <p>Program Director R and Assistnat Program Director L</p>
+        <p>Program Director R and Assistant Program Director L</p>
       </div>
     </div>
     <div className="carousel-item">
