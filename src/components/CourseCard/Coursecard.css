@@ -1,0 +1,21 @@
+.course-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fefefe;
+  transition: 0.2s all ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.code {
+  font-weight: bold;
+}
+
+.credits {
+  font-style: italic;
+  color: #555;
+}
