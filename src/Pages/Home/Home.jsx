@@ -18,6 +18,7 @@ const Home = () => {
 
       {/* Navbar sits below the header */}
       <Navbar />
+      
 
     </>
   );
