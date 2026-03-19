@@ -1,28 +1,28 @@
 const coursesData = [
   {
-    code: "CSIT101",
-    title: "Introduction to Programming",
-    description: "Basics of programming using C and Python.",
-    credits: 3
+    description: "FirstSemester",
   },
   {
-    code: "CSIT102",
-    title: "Data Structures",
-    description: "Understanding data structures and algorithms.",
-    credits: 4
+    description: "SecondSemester",
   },
   {
-    code: "CSIT103",
-    title: "Database Systems",
-    description: "Introduction to relational databases and SQL.",
-    credits: 3
+    description: "ThirdSemester",    
   },
   {
-    code: "CSIT104",
-    title: "Computer Networks",
-    description: "Fundamentals of networking and protocols.",
-    credits: 3
+    description: "FourthSemester",
   },
+  {
+    description: "FifthSemester",
+  },
+  {
+    description: "SixthSemester",
+  },      
+  {
+    description: "SeventhSemester",
+  },
+  {
+    description: "EighthSemester",
+  }
   // Add more courses here
 ];
 

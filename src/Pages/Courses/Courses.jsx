@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import CourseCard from '../../components/CourseCard/Coursecard'
 import coursesData from '../../Data/coursedata'
+import { Outlet } from 'react-router-dom'
 
 const CoursesPage = () => {
   return (
@@ -11,14 +12,12 @@ const CoursesPage = () => {
       <div className="courses-grid">
         {coursesData.map((course) => (
           <CourseCard
-            key={course.code}
-            title={course.title}
-            code={course.code}
+            key={course.description}
             description={course.description}
-            credits={course.credits}
           />
         ))}
       </div>
+      <Outlet />
     </div>
   );
 };
