@@ -6,7 +6,6 @@ import About from "./Pages/About/About"
 import Contact from "./Pages/Contact/Contact"
 import Attendence from "./Pages/Attendence/Attendence"
 import HOD from "./Pages/HOD/HOD"
-import Firstsemester from "./Pages/Semester/firstsemester/Firstsemester"
 
 function App() {
   return (
