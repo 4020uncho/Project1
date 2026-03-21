@@ -2,13 +2,16 @@ import React from 'react'
 import HOD from '../HOD/HOD'
 import { BrowserRouter } from 'react-router-dom'
 import Navbar from '../../components/Navbar/Navbar'
+import assets from '../../assets/logo.png'
 
 const About = () => {
   return (
     <div>
+      <Navbar/>
         <div className="container mt-4">
+          <img src={assets} alt="Department Logo" className="mb-4" style={{ width: '150px', alignContent: 'center' }} />
 
-      <h2 className="text-center mb-4" >
+      <h2 className="text-center mb-4" style={{ color: '#cc4400', fontWeight: 'bold' , alignContent: 'auto'}}>
         Department of Information Technology
       </h2>
 
