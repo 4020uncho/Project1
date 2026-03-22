@@ -9,7 +9,6 @@ const Courses = () => {
     <div>
       <Navbar/>
       <Nav1/>
-      
     </div>
   )
 }
