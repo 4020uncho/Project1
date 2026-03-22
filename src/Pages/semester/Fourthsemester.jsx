@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Nav1 from '../../components/coursenav/Nav1'
 import image from '../../assets/semesters/sem4.png'
+import Footer from '../../components/footer/Footer'
 
 const Fourthsemester = () => {
   return (
@@ -15,6 +16,7 @@ const Fourthsemester = () => {
         style={{ width: '100%', height: 'auto' }}
       />
     </div>
+    <Footer/>
     </div>
   )
 }
