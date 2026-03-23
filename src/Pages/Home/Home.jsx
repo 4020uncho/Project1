@@ -6,6 +6,7 @@ import hod from "../../assets/Hod/hod.png";
 import Marquee from "../../components/marquee/Marquee";
 import Footer from "../../components/footer/Footer";
 import HomeCarousel from "../../components/carousel/Homecarousel";
+import Modal from "../../components/modal/Modal";
 
 const Home = () => {
   return (
@@ -26,10 +27,10 @@ const Home = () => {
       {/* Navbar sits below the header */}
       <Navbar />
       <Marquee/>
-
       <HomeCarousel/>
       <Footer/>
       <Outlet />
+      <Modal/>
     </>
   );
 };
