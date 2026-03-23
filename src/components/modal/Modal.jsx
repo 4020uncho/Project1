@@ -24,6 +24,7 @@ const Modal = () => {
           background: '#cc4400', color: 'white', border: 'none',
           borderRadius: '50%', width: '30px', height: '30px', cursor: 'pointer', fontSize: '16px'
         }}>✕</button>
+        Notice for BscCsit 3rd Semester Students
         <img src={popup1} alt="Notice" style={{ width: '100%' }} />
       </div>
     </div>
