@@ -48,8 +48,8 @@ const Login = () => {
         />
 
         <button type="submit" style={styles.button}>Login</button>
-        <a href="/register" style={styles.register}>• Register</a>
       </form>
+
     </div>
   );
 };
@@ -101,7 +101,7 @@ const styles = {
     borderRadius: "5px",
     cursor: "pointer",
     marginTop: "15px",
-    fontSize: "1rem",
+    fontSize: "1rem",   
   },
   register: {
     display: "block",
