@@ -1,21 +1,40 @@
 import React, { useState } from "react";
 import frontpage from '../../assets/frontpage/s3.jpg'
+import {useNavigate} from 'react-router-dom';
+
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     if (!formData.email || !formData.password) {
       alert("Please fill all fields");
       return;
     }
-    if (formData.email === "admin@gmail.com" && formData.password === "1234") {
+
+    console.log(formData.email, formData.password);
+
+    const resp = await fetch("http://localhost:5000/api/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        email: formData.email,
+        password: formData.password
+      })
+    });
+
+    const data = await resp.json();
+
+    if (data.message === "User logged in successfully") {
       alert("Login successful");
+      navigate("/attendance/dashboard");
     } else {
       alert("Invalid credentials");
     }
@@ -33,6 +52,7 @@ const Login = () => {
           type="email"
           name="email"
           placeholder="Enter Email"
+
           value={formData.email}
           onChange={handleChange}
           style={styles.input}

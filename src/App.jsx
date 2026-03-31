@@ -14,6 +14,7 @@ import FifthSemester from "./Pages/semester/Fifthsemester"
 import SixthSemester from "./Pages/semester/Sixthsemester"
 import SeventhSemester from "./Pages/semester/Seventhsemester"
 import EighthSemester from "./Pages/semester/Eighthsemester"
+import Dahboard from "./Pages/userportal/Dashboard"
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path="/courses/seventhsemester" element={<SeventhSemester />} />
       <Route path="/courses/eighthsemester" element={<EighthSemester />} />
       <Route path='/attendence' element={<Attendence/>}/>
+      <Route path='/attendance/dashboard' element={<Dahboard/>}/>
       <Route path='*' element={<div>Page not found</div>} />
     </Routes>
     
