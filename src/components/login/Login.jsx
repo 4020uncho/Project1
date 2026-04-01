@@ -34,7 +34,7 @@ const Login = () => {
 
     if (data.message === "User logged in successfully") {
       alert("Login successful");
-      navigate("/attendance/dashboard");
+      navigate("/studentlogin/dashboard");
     } else {
       alert("Invalid credentials");
     }

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Login from '../../components/login/Login'
 
-const Attendence = () => {
+const Studentlogin = () => {
   return (
     <div className="Container">
       <Navbar/>
@@ -11,4 +11,4 @@ const Attendence = () => {
   )
 }
 
-export default Attendence
+export default Studentlogin

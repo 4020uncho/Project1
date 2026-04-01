@@ -4,7 +4,7 @@ import Home from "./Pages/Home/Home"
 import Courses from "./Pages/Courses/Courses"
 import About from "./Pages/About/About"
 import Contact from "./Pages/Contact/Contact"
-import Attendence from "./Pages/Attendence/Attendence"
+import Studentlogin from "./Pages/studentlogin/studentlogin"
 import HOD from "./Pages/HOD/HOD"
 import FirstSemester from "./Pages/semester/Firstsemester"
 import SecondSemester from "./Pages/semester/Secondsemester"
@@ -14,7 +14,7 @@ import FifthSemester from "./Pages/semester/Fifthsemester"
 import SixthSemester from "./Pages/semester/Sixthsemester"
 import SeventhSemester from "./Pages/semester/Seventhsemester"
 import EighthSemester from "./Pages/semester/Eighthsemester"
-import Dahboard from "./Pages/userportal/Dashboard"
+import Dashboard from "./Pages/userportal/Dashboard"
 
 function App() {
   return (
@@ -33,8 +33,8 @@ function App() {
       <Route path="/courses/sixthsemester" element={<SixthSemester />} />
       <Route path="/courses/seventhsemester" element={<SeventhSemester />} />
       <Route path="/courses/eighthsemester" element={<EighthSemester />} />
-      <Route path='/attendence' element={<Attendence/>}/>
-      <Route path='/attendance/dashboard' element={<Dahboard/>}/>
+      <Route path='/studentlogin' element={<Studentlogin/>}/>
+      <Route path='/studentlogin/dashboard' element={<Dashboard/>}/>
       <Route path='*' element={<div>Page not found</div>} />
     </Routes>
     
