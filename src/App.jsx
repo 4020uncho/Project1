@@ -17,6 +17,7 @@ import EighthSemester from "./Pages/semester/Eighthsemester"
 import Dashboard from "./Pages/userportal/Dashboard"
 import Attendance from "./Pages/Attendance/Attendance"
 import Course from "./Pages/course/Course"
+import Admin from "./Pages/admin/Admin"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path='/hod' element={<HOD/>} />
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/courses' element={<Courses/>}/>
+      <Route path='/admin' element={<Admin/>}/>
       <Route path="/courses/firstsemester" element={<FirstSemester/>}/>
       <Route path="/courses/secondsemester" element={<SecondSemester/>}/>
       <Route path="/courses/thirdsemester" element={<ThirdSemester/>}/>
