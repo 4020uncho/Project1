@@ -21,12 +21,13 @@ const Attendance = () => {
   );
 
   return (
-    
-    <div className="button">
-      <Link to="/studentlogin/dashboard"><button aria-label="Back to Dashboard">←</button></Link>
-    <div className="filters">
+    <div className="attendance-page">
+      <div className="attendance-container">
+        <div className="button">
+          <Link to="/studentlogin/dashboard"><button aria-label="Back to Dashboard">←</button></Link>
+        <div className="filters">
   <select
-    className="dropdown"
+    className="dropdown1"
     value={month}
     onChange={(e) => setMonth(Number(e.target.value))}
   >
@@ -36,7 +37,7 @@ const Attendance = () => {
   </select>
 
   <select
-    className="dropdown"
+    className="dropdown1"
     value={year}
     onChange={(e) => setYear(Number(e.target.value))}
   >
@@ -45,6 +46,7 @@ const Attendance = () => {
     ))}
   </select>
 </div>
+        </div>
 
       <h2>
         Attendance for {months[month - 1]} {year}
@@ -72,6 +74,7 @@ const Attendance = () => {
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   );

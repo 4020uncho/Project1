@@ -5,6 +5,7 @@ import {useNavigate} from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const [isButtonHovered, setIsButtonHovered] = useState(false);
   const navigate = useNavigate();
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -44,7 +45,7 @@ const Login = () => {
     <div style={styles.container}>
       <img src={frontpage} style={styles.image} alt="campus" />
 
-      {/* Form sits on top of the image */}
+      
       <form onSubmit={handleSubmit} style={styles.form}>
         <h2 style={styles.title}>Integrated student portal Login</h2>
 
@@ -67,7 +68,17 @@ const Login = () => {
           style={styles.input}
         />
 
-        <button type="submit" style={styles.button}>Login</button>
+        <button
+          type="submit"
+          style={{
+            ...styles.button,
+            ...(isButtonHovered ? styles.buttonHover : {})
+          }}
+          onMouseEnter={() => setIsButtonHovered(true)}
+          onMouseLeave={() => setIsButtonHovered(false)}
+        >
+          Login
+        </button>
       </form>
 
     </div>
@@ -121,7 +132,11 @@ const styles = {
     borderRadius: "5px",
     cursor: "pointer",
     marginTop: "15px",
-    fontSize: "1rem",   
+    fontSize: "1rem",
+    transition: "background-color 0.2s ease",
+  },
+  buttonHover: {
+    backgroundColor: "#0056b3",
   },
   register: {
     display: "block",
